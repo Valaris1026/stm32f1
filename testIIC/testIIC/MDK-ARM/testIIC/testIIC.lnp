@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"testiic\startup_stm32f103xe.o"
+"testiic\main.o"
+"testiic\gpio.o"
+"testiic\tim.o"
+"testiic\usart.o"
+"testiic\stm32f1xx_it.o"
+"testiic\at24c.o"
+"testiic\stm32f1xx_ll_gpio.o"
+"testiic\stm32f1xx_ll_pwr.o"
+"testiic\stm32f1xx_ll_exti.o"
+"testiic\stm32f1xx_ll_tim.o"
+"testiic\stm32f1xx_ll_dma.o"
+"testiic\stm32f1xx_ll_rcc.o"
+"testiic\stm32f1xx_ll_utils.o"
+"testiic\stm32f1xx_ll_usart.o"
+"testiic\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "testIIC\testIIC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testIIC.map" -o testIIC\testIIC.axf
